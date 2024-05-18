@@ -1,8 +1,13 @@
 # CIFAR10Model
-本项目将手动搭建训练CIFAR10数据集的神经网络
+本项目将手动从零搭建训练CIFAR10数据集的神经网络，而不是基于vgg16来进行修改
+并且用到了m1芯片的gpu进行加速
 
-![img.png](img.png)
+![img.png](imgs/img.png)
 并且使用gpu进行训练
+
+# 训练结果
+![img.png](imgs/img1.png)
+在训练30轮以后，拥有大概65%的正确率
 
 
 # 项目配置
