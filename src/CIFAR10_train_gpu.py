@@ -5,7 +5,7 @@ from torch.utils.data import DataLoader
 from torch.utils.tensorboard import SummaryWriter
 import time
 
-from CIFAR10model import *
+from CIFAR10Model import *
 
 # 创建数据集
 train_dataset = torchvision.datasets.CIFAR10('../datasets', train=True, download=True,
@@ -21,7 +21,7 @@ train_dataLoader = DataLoader(dataset=train_dataset, batch_size=64)
 test_dataloader = DataLoader(dataset=test_dataset, batch_size=64)
 
 # 创建自定义的神经网络
-model = CIFAR10model().to(device)
+model = CIFAR10Model().to(device)
 
 # 加载损失函数与梯度下降算法
 loss_fn = nn.CrossEntropyLoss().to(device)

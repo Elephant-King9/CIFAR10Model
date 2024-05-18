@@ -3,9 +3,9 @@
 from torch import nn
 
 
-class CIFAR10model(nn.Module):
+class CIFAR10Model(nn.Module):
     def __init__(self):
-        super(CIFAR10model, self).__init__()
+        super(CIFAR10Model, self).__init__()
         self.conv1 = nn.Conv2d(3, 32, kernel_size=5, padding=2)
         self.pool1 = nn.MaxPool2d(2)
         self.conv2 = nn.Conv2d(32, 32, kernel_size=5, padding=2)
@@ -30,5 +30,5 @@ class CIFAR10model(nn.Module):
 
 
 if __name__ == '__main__':
-    model = CIFAR10model()
+    model = CIFAR10Model()
     print(model)
